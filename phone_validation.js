@@ -34,8 +34,8 @@ function validateForm() {
     }
 
     // Пошук ідентифікаторів полів
-    let num = form.querySelector('input[name^="tel"]').name.replace('tel', '') || 1;
-    let name = form.querySelector('input[name^="name"]').name.replace('name', '') || '';
+    let num = form.querySelector('input[name^="phone"]').name.replace('tel', '') || 1;
+    // let name = form.querySelector('input[name^="name"]').name.replace('name', '') || '';
 
     sendorder(num);
     return false;
